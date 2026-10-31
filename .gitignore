@@ -1,0 +1,4 @@
+shot_*.png
+cmp.py
+node_modules/
+__pycache__/

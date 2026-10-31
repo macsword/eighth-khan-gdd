@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}}</title>
+<meta name="description" content="سند طراحی بازی خان هشتم؛ روگ‌لایت دک‌بیلدر بر پایه‌ی حکم">
+<meta name="theme-color" content="#0f2a4a" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1626" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#content">رفتن به متن</a>
+<header class="site-head">
+  <div class="head-inner">
+    <button class="toc-btn" id="tocBtn" aria-controls="toc" aria-expanded="false" aria-label="فهرست مطالب">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href="#top">
+      <svg class="emblem" viewBox="0 0 48 48" aria-hidden="true"><use href="#star8"/></svg>
+      <span class="brand-text"><strong>خان هشتم</strong><small>سند طراحی بازی</small></span>
+    </a>
+  </div>
+</header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star8" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round">
+        <rect x="11" y="11" width="26" height="26"/>
+        <rect x="11" y="11" width="26" height="26" transform="rotate(45 24 24)"/>
+        <circle cx="24" cy="24" r="6.5"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+<div class="hero" id="top">
+  <div class="hero-inner">
+    <svg class="hero-star" viewBox="0 0 48 48" aria-hidden="true"><use href="#star8"/></svg>
+    <h1>{{TITLE}}</h1>
+    <p class="hero-sub">روگ‌لایت دک‌بیلدر بر پایه‌ی حکم<span class="dot">◆</span>{{NSEC}} بخش<span class="dot">◆</span>{{NTAB}} جدول</p>
+    <p class="hero-date">آخرین به‌روزرسانی: {{UPDATED}}</p>
+  </div>
+  <div class="border-band" aria-hidden="true"></div>
+</div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="فهرست مطالب">
+    <div class="toc-head">
+      <span>فهرست مطالب</span>
+      <button class="toc-close" id="tocClose" aria-label="بستن فهرست">×</button>
+    </div>
+    {{NAV}}
+  </nav>
+  <div class="scrim" id="scrim" hidden></div>
+  <main id="content" class="content">
+{{BODY}}
+  </main>
+</div>
+<footer class="site-foot">
+  <div class="border-band" aria-hidden="true"></div>
+  <p>«خان هشتم» — سند طراحی بازی</p>
+  <p>آخرین به‌روزرسانی: <time>{{UPDATED}}</time></p>
+</footer>
+<a class="to-top" href="#top" aria-label="بازگشت به بالا">↑</a>
+<script src="app.js" defer></script>
+</body>
+</html>
