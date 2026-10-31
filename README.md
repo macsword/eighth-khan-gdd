@@ -9,7 +9,7 @@
 
 | فایل | نقش |
 |---|---|
-| `gdd_fa.md` | **منبع محتوا** (Markdown فارسی؛ هم‌متن با Google Doc) |
+| `gdd_fa.md` | **منبع محتوا** (Markdown فارسی؛ سند زنده همین فایل است) |
 | `build.py` | تبدیل `gdd_fa.md` + `template.html` به `index.html` |
 | `template.html` | قالب صفحه (سربرگ، فهرست کشویی، پانویس) |
 | `style.css` | ظاهر (موبایل‌اول، RTL، روشن/تیره، چاپ) |
@@ -24,8 +24,8 @@
 
 ```bash
 cd /workspace/gdd-site
-# 1) gdd_fa.md را ویرایش کنید (یا از Google Doc دوباره تولید کنید)
-python3 build.py --date "۹ آبان ۱۴۰۵"   # بدون --date، تاریخ امروز شمسی گذاشته می‌شود
+# 1) gdd_fa.md را ویرایش کنید
+TZ=Europe/Berlin python3 build.py   # بدون --date، تاریخ امروز شمسی گذاشته می‌شود (ساعت جعبه UTC است)
 git add -A && git commit -m "به‌روزرسانی سند" && git push
 # GitHub Pages ظرف ۱ تا ۲ دقیقه به‌روز می‌شود
 ```
@@ -46,5 +46,5 @@ node shoot.js http://localhost:8765/   # shot_mobile.png / shot_desktop.png + ب
 `shoot.js` از puppeteer-core در `/workspace/ekbuild/node_modules` و `/usr/bin/google-chrome` استفاده می‌کند.
 
 ## یادداشت محتوا
-متن از Google Doc «خان هشتم — سند طراحی بازی» (۹ آبان ۱۴۰۵) گرفته شده و بدون تغییر عبارت است.
-دو جدول عریض (مقایسه‌ی گونه‌ها در §۱۶٫۴ و جدول اجراها در §۱۶٫۵) مثل Doc ترانهاده‌اند تا روی گوشی خوانا باشند.
+نسخه‌ی اول متن (۹ آبان ۱۴۰۵) از یک Google Doc گرفته شد؛ از ۱۰ آبان ۱۴۰۵ سند فقط همین‌جا (`gdd_fa.md`) به‌روز می‌شود و Google Doc دیگر استفاده نمی‌شود.
+دو جدول عریض (مقایسه‌ی گونه‌ها در §۱۶٫۴ و جدول اجراها در §۱۶٫۵) ترانهاده‌اند تا روی گوشی خوانا باشند.
