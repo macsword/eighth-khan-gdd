@@ -25,6 +25,19 @@
       <svg class="emblem" viewBox="0 0 48 48" aria-hidden="true"><use href="#star8"/></svg>
       <span class="brand-text"><strong>خان هشتم</strong><small>سند طراحی بازی</small></span>
     </a>
+    <button class="search-btn" id="searchBtn" aria-controls="searchPanel" aria-expanded="false" aria-label="جست‌وجو در سند">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="search-panel" id="searchPanel" role="search" hidden>
+    <div class="search-row">
+      <input id="searchInput" type="search" placeholder="جست‌وجو در سند…" aria-label="عبارت جست‌وجو" autocomplete="off" spellcheck="false" enterkeyhint="search">
+      <span class="search-count" id="searchCount" aria-live="polite"></span>
+      <button class="search-nav" id="searchPrev" aria-label="نتیجه‌ی قبلی" title="قبلی (Shift+Enter)">▲</button>
+      <button class="search-nav" id="searchNext" aria-label="نتیجه‌ی بعدی" title="بعدی (Enter)">▼</button>
+      <button class="search-nav search-x" id="searchClose" aria-label="بستن جست‌وجو" title="بستن (Esc)">×</button>
+    </div>
+    <ol class="search-results" id="searchResults" hidden></ol>
   </div>
 </header>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
